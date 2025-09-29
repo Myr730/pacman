@@ -28,8 +28,8 @@ function App() {
         .then(data => {
           if (data.agents && data.agents.length > 0) {
             const firstAgent = data.agents[0];
-            setPosX(firstAgent.pos[0]);
-            setPosY(firstAgent.pos[1]);
+            setPosX(firstAgent.pos[1]);
+            setPosY(firstAgent.pos[2]);
           }
         })
         .catch(error => console.error("Error:", error));
